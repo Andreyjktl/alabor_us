@@ -5,22 +5,22 @@
     <title>Quick start. Local static application</title>
 </head>
 <body>
-    <div id="name"></div>
+<div id="name"></div>
 
-    <script src="//api.bitrix24.com/api/v1/"></script>
-    <script>
-        // Make a call to REST when JS SDK is loaded
-        BX24.init(function(){
+<script src="//api.bitrix24.com/api/v1/"></script>
+<script>
+    // Make a call to REST when JS SDK is loaded
+    BX24.init(function(){
 
-            BX24.callMethod('user.current', {}, function(res){
-                var name = document.getElementById('name');
-                name.innerHTML = res.data().NAME + ' ' + res.data().LAST_NAME;
-                console.log(res.data());
-            });
-
-            console.log('B24 SDK is ready!', BX24.isAdmin());
-
+        BX24.callMethod('user.current', {}, function(res){
+            var name = document.getElementById('name');
+            name.innerHTML = res.data().NAME + ' ' + res.data().LAST_NAME;
+            console.log(res.data());
         });
-    </script>
+
+        console.log('B24 SDK is ready!', BX24.isAdmin());
+
+    });
+</script>
 </body>
 </html>
