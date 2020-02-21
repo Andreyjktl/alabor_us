@@ -224,3 +224,9 @@ body {
 tr td.rasp-active {
     background-color: rgb(254, 170, 150);
 }
+.index-form {
+    margin: 3%;
+}
+form button{
+    width: 135px;
+}
