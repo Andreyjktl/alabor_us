@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bs-stepper.min.css" />
+    <title>Вопрос</title>
+  </head>
+  <body>
+    <div class="container px-5">
+      <div class="row">
+        <div class="col">
+          <div id="stepper" class="bs-stepper linear bg-white shadow-sm">
+            <div class="bs-stepper-header" role="tablist">
+              <div class="step active" data-target="#agreement-part">
+                <button
+                  type="button"
+                  class="step-trigger"
+                  role="tab"
+                  aria-controls="agreement-part"
+                  id="agreement-part-trigger"
+                  aria-selected="false"
+                  disabled="disabled"
+                >
+                  <span class="bs-stepper-label">Вопросы</span>
+                </button>
+              </div>
+            </div>
+            <div class="bs-stepper-content">
+              <div
+                id="choose-part"
+                class="bs-stepper-pane active dstepper-block"
+                role="tabpanel"
+                aria-labelledby="choose-part-trigger"
+              >
+                <h5 class="text-left">
+                  Отправьте проект вопросов и резульций на согласование
+                  секретарю УС.
+                </h5>
+                <h5 class="text-left">
+                  К каждому вопросы вы можете прикрепить фаил.
+                </h5>
+                <h5 class="text-left">
+                  После проверки проекта вопроса и резолюции секретарём УС Вы
+                  получите уведомление
+                </h5>
+                <div id="stepper" class="bs-stepper linear bg-white shadow-sm">
+                  <div
+                    id="carouselExampleCaptions"
+                    class="carousel slide"
+                    data-ride="carousel"
+                    data-interval="false"
+                  >
+                    <ol class="carousel-indicators">
+                      <li
+                        data-target="#carouselExampleCaptions"
+                        data-slide-to="0"
+                        class="active bg-secondary"
+                      ></li>
+                      <li
+                        data-target="#carouselExampleCaptions"
+                        data-slide-to="1"
+                        class="bg-secondary"
+                      ></li>
+                      <li
+                        data-target="#carouselExampleCaptions"
+                        data-slide-to="2"
+                        class="bg-secondary"
+                      ></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <form>
+                          <div class="col text-center bg-light">
+                            <h3>Поленов Лев Константинович</h3>
+                          </div>
+                          <br />
+                          <br />
+                          <div class="row">
+                            <div class="col">
+                              <div class="form-group row">
+                                <label
+                                  for="parent-email"
+                                  class="col-4 col-form-label"
+                                  >Вопрос:</label
+                                >
+                                <div class="col-8">
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                    placeholder="Организация обустройства территории"
+                                  ></textarea>
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label
+                                  for="date-start"
+                                  class="col-4 col-form-label"
+                                  >Резолюция:</label
+                                >
+                                <div class="col-8">
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                    placeholder="Multi-line"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form-group row">
+                                <label
+                                  for="date-start"
+                                  class="col-4 col-form-label"
+                                  >Файл:</label
+                                >
+                                <div class="col-8">
+                                  <div class="input-group">
+                                    <div class="custom-file">
+                                      <input
+                                        type="file"
+                                        class="custom-file-input"
+                                        id="inputGroupFile01"
+                                        aria-describedby="inputGroupFileAddon01"
+                                      />
+                                      <label
+                                        class="custom-file-label"
+                                        for="inputGroupFile01"
+                                        >Выберите файл</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="form-group row">
+                                <label
+                                  for="parent-email"
+                                  class="col-2 col-form-label"
+                                  >Комментарий:</label
+                                >
+                                <div class="col">
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                    placeholder="Добавить"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-center">
+                              <button class="btn btn-primary btn-next" id="">
+                                Сохранить
+                              </button>
+                              <br />
+                              <br />
+                              <br />
+                              <br />
+                              <br />
+                            </div>
+                          </div>
+                        </form>
+
+                        <div
+                          class="carousel-caption d-none d-md-block text-dark"
+                        >
+                          <p>
+                            Вопрос 1 из n
+                          </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <form>
+                          <div class="col text-center bg-light">
+                            <h3>Поленов Лев Константинович</h3>
+                          </div>
+                          <br />
+                          <br />
+                          <div class="row">
+                            <div class="col">
+                              <div class="form-group row">
+                                <label
+                                  for="parent-email"
+                                  class="col-4 col-form-label"
+                                  >Вопрос:</label
+                                >
+                                <div class="col-8">
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                    placeholder="Организация обустройства территории"
+                                  ></textarea>
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label
+                                  for="date-start"
+                                  class="col-4 col-form-label"
+                                  >Резолюция:</label
+                                >
+                                <div class="col-8">
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                    placeholder="Multi-line"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form-group row">
+                                <label
+                                  for="date-start"
+                                  class="col-4 col-form-label"
+                                  >Файл:</label
+                                >
+                                <div class="col-8">
+                                  <div class="input-group">
+                                    <div class="custom-file">
+                                      <input
+                                        type="file"
+                                        class="custom-file-input"
+                                        id="inputGroupFile01"
+                                        aria-describedby="inputGroupFileAddon01"
+                                      />
+                                      <label
+                                        class="custom-file-label"
+                                        for="inputGroupFile01"
+                                        >Выберите файл</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="form-group row">
+                                <label
+                                  for="parent-email"
+                                  class="col-2 col-form-label"
+                                  >Комментарий:</label
+                                >
+                                <div class="col">
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                    placeholder="Добавить"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-center">
+                              <button class="btn btn-primary btn-next" id="">
+                                Сохранить
+                              </button>
+                              <br />
+                              <br />
+                              <br />
+                              <br />
+                              <br />
+                            </div>
+                          </div>
+                        </form>
+                        <div
+                          class="carousel-caption d-none d-md-block text-dark"
+                        >
+                          <p>
+                            Вопрос 2 из n
+                          </p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <form>
+                          <div class="col text-center bg-light">
+                            <h3>Поленов Лев Константинович</h3>
+                          </div>
+                          <br />
+                          <br />
+                          <div class="row">
+                            <div class="col">
+                              <div class="form-group row">
+                                <label
+                                  for="parent-email"
+                                  class="col-4 col-form-label"
+                                  >Вопрос:</label
+                                >
+                                <div class="col-8">
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                    placeholder="Организация обустройства территории"
+                                  ></textarea>
+                                </div>
+                              </div>
+                              <div class="form-group row">
+                                <label
+                                  for="date-start"
+                                  class="col-4 col-form-label"
+                                  >Резолюция:</label
+                                >
+                                <div class="col-8">
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                    placeholder="Multi-line"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col">
+                              <div class="form-group row">
+                                <label
+                                  for="date-start"
+                                  class="col-4 col-form-label"
+                                  >Файл:</label
+                                >
+                                <div class="col-8">
+                                  <div class="input-group">
+                                    <div class="custom-file">
+                                      <input
+                                        type="file"
+                                        class="custom-file-input"
+                                        id="inputGroupFile01"
+                                        aria-describedby="inputGroupFileAddon01"
+                                      />
+                                      <label
+                                        class="custom-file-label"
+                                        for="inputGroupFile01"
+                                        >Выберите файл</label
+                                      >
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col">
+                              <div class="form-group row">
+                                <label
+                                  for="parent-email"
+                                  class="col-2 col-form-label"
+                                  >Комментарий:</label
+                                >
+                                <div class="col">
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                    placeholder="Добавить"
+                                  ></textarea>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col text-center">
+                              <button class="btn btn-primary btn-next" id="">
+                                Сохранить
+                              </button>
+                              <br />
+                              <br />
+                              <br />
+                              <br />
+                              <br />
+                            </div>
+                          </div>
+                        </form>
+
+                        <div
+                          class="carousel-caption d-none d-md-block text-dark"
+                        >
+                          <p>
+                            Вопрос 3 из n
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <p class="text-left">
+                  <button class="btn btn-primary btn-next" id="">
+                    Добавить вопрос
+                  </button>
+                  <button class="btn btn-primary btn-next" id="">
+                    Отправить
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bs-stepper.min.js"></script>
+    <script src="js/dataControl.js"></script>
+  </body>
+</html>
