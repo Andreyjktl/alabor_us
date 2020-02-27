@@ -224,9 +224,20 @@ body {
 tr td.rasp-active {
     background-color: rgb(254, 170, 150);
 }
-.index-form {
+.btn-menu {
     margin: 3%;
 }
-form button{
+.btn-menu button {
+    display: inline-block;
     width: 135px;
+    margin: 3%;
+}
+
+.bs-stepper-header .btn {
+    position: absolute;
+    right: 5%;
+}
+
+.bs-stepper-header .step{
+    margin-right: 12%;
 }

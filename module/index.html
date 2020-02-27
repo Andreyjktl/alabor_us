@@ -8,16 +8,24 @@
     <title>Меню</title>
   </head>
   <body>
-    <div class="col text-center">
-      <form class="index-form" action="./Question.html" target="_self">
-        <button class="btn btn-primary btn-next">Вопрос</button>
-      </form>
-      <form class="index-form" action="./Date_setting.html" target="_self">
-        <button class="btn btn-primary btn-next">Установка даты</button>
-      </form>
-      <form class="index-form" action="./Date_request.html" target="_self">
-        <button class="btn btn-primary btn-next">Запрос даты</button>
-      </form>
+    <div class ="btn-menu">
+      <div class="col text-center">
+          <button 
+            class="btn btn-primary btn-next" 
+            onclick="document.location='./Question.html'"
+          >Вопрос
+          </button>
+          <button
+            class="btn btn-primary btn-next"
+            onclick="document.location='./Date_setting.html'"
+          >Установка даты
+          </button>
+          <button
+            class="btn btn-primary btn-next"
+            onclick="document.location='./Date_request.html'"
+          >Запрос даты
+          </button>
+      </div>
     </div>
    </body>
 </html>

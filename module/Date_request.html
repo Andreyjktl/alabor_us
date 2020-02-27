@@ -42,6 +42,11 @@
                   <span class="bs-stepper-label">Вопросы</span>
                 </button>
               </div>
+              <button 
+                class="btn btn-primary btn-next" 
+                onclick="document.location='./index.html'"
+              >Назад
+              </button>
             </div>
             <div class="bs-stepper-content">
               <div
@@ -62,111 +67,118 @@
                   дату.
                 </h5>
                 <br />
-                <div class="row">
-                  <div class="col">
-                    <div class="row">
-                      <div class="col text-center">
-                        <p class="font-weight-bold">
-                          Укажите дату предстоящего заседания УС:
-                        </p>
+                <form method=post>
+                  <div class="row">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col text-center">
+                          <p class="font-weight-bold">
+                            Укажите дату предстоящего заседания УС:
+                          </p>
+                        </div>
+                      </div>
+                      <div class="form-group row justify-content-center">
+                        <div class="col-8">
+                          <input
+                            required
+                            type="date"
+                            class="form-control"
+                            id=""
+                            name="Request-meeting"
+                            placeholder=""
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div class="form-group row justify-content-center">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col text-center">
+                          <p class="font-weight-bold">
+                            Крайний срок подачи материалов:
+                          </p>
+                        </div>
+                      </div>
+                      <div class="form-group row justify-content-center">
+                        <div class="col-8">
+                          <input
+                            required
+                            type="date"
+                            class="form-control"
+                            id=""
+                            name="Request-materials"
+                            placeholder=""
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br />
+                  <p class="text-center">
+                    <input 
+                    type="submit"
+                    name="Request-send"
+                    name="Отправить"
+                    class="btn btn-primary" id="">
+                  </input>
+                  </p>
+                </form>
+                  <br />
+                  <form>
+                  <div class="row">
+                    <div class="col text-center">
                       <div class="col-8">
-                        <input
-                          required
-                          type="date"
-                          class="form-control"
-                          id=""
-                          name=""
-                          placeholder=""
-                        />
+                        <h2>Участники</h2>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="col-8"></div>
+                    </div>
+                  </div>
+                  <br />
+                  <div class="row">
+                    <div class="col text-center">
+                      <div class="col-6">
+                        <strong>Присутствую:</strong>
+                      </div>
+                    </div>
+                    <div class="col text-center">
+                      <div class="col-6">
+                        <strong>Отсутствую:</strong>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="row">
-                      <div class="col text-center">
-                        <p class="font-weight-bold">
-                          Крайний срок подачи материалов:
-                        </p>
+                  <br />
+                  <div class="row">
+                    <div class="col text-left">
+                      <div class="col-8 mx-auto">
+                        <ul>
+                          <li>Иванов Иван Борисович</li>
+                          <li>Петров Алексей Иванович</li>
+                          <li>Сидоров Иван Иванович</li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="form-group row justify-content-center">
-                      <div class="col-8">
-                        <input
-                          required
-                          type="date"
-                          class="form-control"
-                          id=""
-                          name=""
-                          placeholder=""
-                        />
+                    <div class="col text-left">
+                      <div class="col-8 mx-auto">
+                        <ul>
+                          <li>Кустодиев Радион Сергеевич</li>
+                          <li>Петров Вениамин Андреевич</li>
+                          <li>Сидоров Иван Иванович</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-                </div>
-                <br />
-                <p class="text-center">
-                  <button class="btn btn-primary" id="">
-                    Отправить
-                  </button>
-                </p>
-                <br />
-                <div class="row">
-                  <div class="col text-center">
-                    <div class="col-8">
-                      <h2>Участники</h2>
-                    </div>
-                  </div>
-                  <div class="col">
-                    <div class="col-8"></div>
-                  </div>
-                </div>
-                <br />
-                <div class="row">
-                  <div class="col text-center">
-                    <div class="col-6">
-                      <strong>Присутствую:</strong>
-                    </div>
-                  </div>
-                  <div class="col text-center">
-                    <div class="col-6">
-                      <strong>Отсутствую:</strong>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <div class="row">
-                  <div class="col text-left">
-                    <div class="col-8 mx-auto">
-                      <ul>
-                        <li>Иванов Иван Борисович</li>
-                        <li>Петров Алексей Иванович</li>
-                        <li>Сидоров Иван Иванович</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="col text-left">
-                    <div class="col-8 mx-auto">
-                      <ul>
-                        <li>Кустодиев Радион Сергеевич</li>
-                        <li>Петров Вениамин Андреевич</li>
-                        <li>Сидоров Иван Иванович</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <br />
-                <p class="text-center ">
-                  <button class="btn btn-primary mr-3 ml-3" id="">
-                    Утвердить
-                  </button>
-                  <button class="btn btn-primary mr-3 ml-3" id="">
-                    Отклонить
-                  </button>
-                </p>
+                  <br />
+                  <br />
+                  <p class="text-center ">
+                    <button class="btn btn-primary mr-3 ml-3" id="">
+                      Утвердить
+                    </button>
+                    <button class="btn btn-primary mr-3 ml-3" id="">
+                      Отклонить
+                    </button>
+                  </p>
+                </form>
               </div>
             </div>
           </div>
