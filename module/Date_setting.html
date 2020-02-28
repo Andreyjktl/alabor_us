@@ -42,6 +42,11 @@
                   <span class="bs-stepper-label">Вопросы</span>
                 </button>
               </div>
+              <button 
+                class="btn btn-primary btn-next" 
+                onclick="document.location='./index.html'"
+              >Назад
+              </button>
             </div>
             <div class="bs-stepper-content">
               <div
@@ -62,56 +67,61 @@
                   дату.
                 </h5>
                 <br />
-                <div class="row">
-                  <div class="col">
-                    <div class="row">
-                      <div class="col text-center">
-                        <p class="font-weight-bold">
-                          Укажите дату предстоящего заседания УС:
-                        </p>
+                <form method=post>
+                  <div class="row">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col text-center">
+                          <p class="font-weight-bold">
+                            Укажите дату предстоящего заседания УС:
+                          </p>
+                        </div>
+                      </div>
+                      <div class="form-group row justify-content-center">
+                        <div class="col-8">
+                          <input
+                            required
+                            type="date"
+                            class="form-control"
+                            id=""
+                            name="Setting-meeting"
+                            placeholder=""
+                          />
+                        </div>
                       </div>
                     </div>
-                    <div class="form-group row justify-content-center">
-                      <div class="col-8">
-                        <input
-                          required
-                          type="date"
-                          class="form-control"
-                          id=""
-                          name=""
-                          placeholder=""
-                        />
+                    <div class="col">
+                      <div class="row">
+                        <div class="col text-center">
+                          <p class="font-weight-bold">
+                            Крайний срок подачи материалов:
+                          </p>
+                        </div>
+                      </div>
+                      <div class="form-group row justify-content-center">
+                        <div class="col-8">
+                          <input
+                            required
+                            type="date"
+                            class="form-control"
+                            id=""
+                            name="Setting-materials"
+                            placeholder=""
+                          />
+                        </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col">
-                    <div class="row">
-                      <div class="col text-center">
-                        <p class="font-weight-bold">
-                          Крайний срок подачи материалов:
-                        </p>
-                      </div>
-                    </div>
-                    <div class="form-group row justify-content-center">
-                      <div class="col-8">
-                        <input
-                          required
-                          type="date"
-                          class="form-control"
-                          id=""
-                          name=""
-                          placeholder=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <br />
-                <p class="text-center">
-                  <button class="btn btn-primary btn-next" id="">
-                    Отправить
-                  </button>
-                </p>
+                  <br />
+                  <p class="text-center">
+                    <input 
+                    type="submit"
+                    name="Setting-send"
+                    name="Отправить"
+                    class="btn btn-primary" id="">
+                  </input>
+                  </p>
+                </form>
               </div>
             </div>
           </div>
